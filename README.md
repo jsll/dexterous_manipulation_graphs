@@ -56,10 +56,9 @@ There are infinitely many reference systems for each face or angular component. 
 
 # Known Issues
 
-1. ~~Currently the code does not work well for objects where each subsequent neighboring face of a mesh is slightly tilted until it wraps around to the initial face. An example of such objects are sphere- or cylinder-like objects where faces on the curved part of the object slowly wraps around. Why such objects cause problems is that one cannot calculate a reference system per face or supervoxel that is oriented similarly as the reference system of its neighbors.~~
-2. I have not implemented the super voxel clustering as Python-PCL currently cannot run with Python 3.10.
-3. Collision checking is performed by checking if the points sampled on the mesh are inside the object. Although reasonable, this solution is sensitive to the number of points sampled on the gripper: too many points make it slow, while too few points make collision checking unreliable. Another potentially more accurate option is to use [trimesh collision manager](https://trimsh.org/trimesh.collision.html).
-4. The visualization of angles when picking the start and goal angle should only visualize collision-free angles.
+1. I have not implemented the super voxel clustering as Python-PCL currently cannot run with Python 3.10.
+2. Collision checking is performed by checking if the points sampled on the mesh are inside the object. Although reasonable, this solution is sensitive to the number of points sampled on the gripper: too many points make it slow, while too few points make collision checking unreliable. Another potentially more accurate option is to use [trimesh collision manager](https://trimsh.org/trimesh.collision.html).
+3. The visualization of angles when picking the start and goal angle should only visualize collision-free angles.
 
 # Citation
 
