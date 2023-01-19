@@ -24,7 +24,7 @@ class Gripper:
 
     def reset(self):
         self.load_gripper()
-        self.sample_points_on_gripper()
+        self.gripper_points = self.sample_points_on_gripper()
         self.current_coordinate_frame = np.eye(4)
 
     def transform_coordinate_system(self, transformation_matrix):
